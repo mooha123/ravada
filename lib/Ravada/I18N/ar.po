@@ -814,6 +814,9 @@ msgstr "الفيتنامية"
 msgid "Italian"
 msgstr "الإيطالية"
 
+msgid "Valenciano"
+msgstr "بلنسية إسبانيا"
+
 msgid "Type a typical LDAP user name to fetch the attribute list"
 msgstr  "نموذجي لجلب قائمة السمات" "LDAP" "اكتب اسم مستخدم"
 
