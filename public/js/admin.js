@@ -547,5 +547,21 @@ ravadaApp.directive("solShowMachine", swMach)
             ).then(function(response) {
             });
         };
+	$scope.comparison = function() {
+
+	    if( (new Date('primera fecha').getTime() > new Date('segunda fecha').getTime())){
+	    	var delay = alertify.get('notifier', 'delay');
+  		alertify.alert("Error", "start date greater than end");
+		$scope.settings.frontend.maintenance_start.value
+                        = new Date(now.getFullYear(), now.getMonth(), now.getDate()
+                            , now.getHours(), now.getMinutes());
+
+                $scope.settings.frontend.maintenance_end.value
+                        = new Date(now.getFullYear(), now.getMonth(), now.getDate()
+                            , now.getHours(), now.getMinutes() + 15);
+
+	    }
+		
+	}
     };
 }());

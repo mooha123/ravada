@@ -52,10 +52,10 @@
         </div>
         <div class="row" ng-show="settings.frontend.maintenance.value == 1">
             <div class="col-md-2">
-            <label for="maintenance_start">Maintenance Start</label>
+            <label for="maintenance_start">Maintenance Start </label>
             </div>
             <div class="col-md-4">
-            <input name="maintenance_start" ng-model="settings.frontend.maintenance_start.value"
+            <input name="maintenance_start" ng-model="settings.frontend.maintenance_start.value" ng-click="comparison()"
                 type="datetime-local">
             </div>
         </div>
@@ -65,7 +65,7 @@
             <label for="maintenance_end">Maintenance End</label>
             </div>
             <div class="col-md-4">
-            <input name="maintenance_end" ng-model="settings.frontend.maintenance_end.value"
+            <input name="maintenance_end" ng-model="settings.frontend.maintenance_end.value" ng-blur="comparison()"
                 type="datetime-local">
             </div>
         </div>
